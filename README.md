@@ -22,7 +22,6 @@ Opencv版本：4.0.0
 12.	图像分割包括阈值分割、区域生长、Kmeans聚类、Meanshift、Meanshift、grabcut、分水岭。阈值分割包括简单直方图分割、迭代阈值分割、最佳阈值分割。
 
 ## 项目链接
-后期将直接上传代码，现在只有百度网盘。
 通过网盘分享的文件：ImageProcess.zip
 链接: https://pan.baidu.com/s/1wy3acWWQXDIl1yIs8mBxOg 提取码: ishc
 
