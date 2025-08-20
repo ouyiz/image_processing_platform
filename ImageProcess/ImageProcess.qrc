@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/ImageProcess">
+        <file>icon/back.ico</file>
+        <file>icon/next.ico</file>
+        <file>icon/back1.ico</file>
+        <file>icon/back2.ico</file>
+        <file>icon/next1.ico</file>
+        <file>icon/next2.ico</file>
+    </qresource>
+</RCC>

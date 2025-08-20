@@ -1,0 +1,3678 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ImageProcessClass</class>
+ <widget class="QMainWindow" name="ImageProcessClass">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1238</width>
+    <height>789</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ImageProcess</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QPushButton" name="pushButtonYes">
+    <property name="geometry">
+     <rect>
+      <x>970</x>
+      <y>650</y>
+      <width>75</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>确定</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonNo">
+    <property name="geometry">
+     <rect>
+      <x>1110</x>
+      <y>650</y>
+      <width>75</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>取消</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelSliderMin">
+    <property name="geometry">
+     <rect>
+      <x>940</x>
+      <y>140</y>
+      <width>54</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelSliderMax">
+    <property name="geometry">
+     <rect>
+      <x>1150</x>
+      <y>140</y>
+      <width>54</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelSliderMin_2">
+    <property name="geometry">
+     <rect>
+      <x>940</x>
+      <y>190</y>
+      <width>54</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelSliderMax_2">
+    <property name="geometry">
+     <rect>
+      <x>1150</x>
+      <y>190</y>
+      <width>54</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit">
+    <property name="geometry">
+     <rect>
+      <x>1040</x>
+      <y>140</y>
+      <width>61</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_2">
+    <property name="geometry">
+     <rect>
+      <x>1040</x>
+      <y>190</y>
+      <width>61</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_back">
+    <property name="geometry">
+     <rect>
+      <x>730</x>
+      <y>20</y>
+      <width>75</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="ImageProcess.qrc">
+      <normaloff>:/ImageProcess/icon/back1.ico</normaloff>:/ImageProcess/icon/back1.ico</iconset>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_next">
+    <property name="geometry">
+     <rect>
+      <x>820</x>
+      <y>20</y>
+      <width>75</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="ImageProcess.qrc">
+      <normaloff>:/ImageProcess/icon/next1.ico</normaloff>:/ImageProcess/icon/next1.ico</iconset>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelSliderMin_3">
+    <property name="geometry">
+     <rect>
+      <x>940</x>
+      <y>240</y>
+      <width>54</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelSliderMax_3">
+    <property name="geometry">
+     <rect>
+      <x>1150</x>
+      <y>240</y>
+      <width>54</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_3">
+    <property name="geometry">
+     <rect>
+      <x>1040</x>
+      <y>240</y>
+      <width>61</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>881</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+    background-color: rgb(248, 248, 248);
+    border-radius: 10px; /* 设置圆角半径 */
+    padding: 10px; /* 可选，增加内边距以使圆角效果更显著 */
+}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>920</x>
+      <y>10</y>
+      <width>301</width>
+      <height>711</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+    background-color: rgb(248, 248, 248);
+    border-radius: 10px; /* 设置圆角半径 */
+    padding: 10px; /* 可选，增加内边距以使圆角效果更显著 */
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>20</y>
+      <width>151</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+font: 22pt &quot;宋体&quot;;</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;数字图像处理&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>20</y>
+      <width>151</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+font: 10pt &quot;宋体&quot;;</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelShow">
+    <property name="geometry">
+     <rect>
+      <x>940</x>
+      <y>20</y>
+      <width>271</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>宋体</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
+    </property>
+    <property name="text">
+     <string>处理详情</string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::AutoText</enum>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QSlider" name="horizontalSlider">
+    <property name="geometry">
+     <rect>
+      <x>940</x>
+      <y>120</y>
+      <width>261</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QSlider::groove:horizontal {
+    border: 1px solid rgb(200, 200, 200);
+    height: 6px;
+    border-radius: 3px; /* 调整滑槽的圆角以确保圆形滑块完全可见 */
+}
+
+QSlider::sub-page:horizontal {
+    background: rgb(200, 200, 200);
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 3px; /* 调整滑槽的圆角以确保圆形滑块完全可见 */
+}
+
+QSlider::add-page:horizontal {
+    background: rgb(200, 200, 200);
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 3px; /* 调整滑槽的圆角以确保圆形滑块完全可见 */
+}
+
+QSlider::handle:horizontal {
+    background: rgb(69, 173, 237);
+    width: 14px; /* 设置滑块的宽度为14像素 */
+    height: 14px; /* 设置滑块的高度为14像素 */
+    margin-top: -5px; /* 调整滑块的位置使其垂直居中 */
+    margin-bottom: -5px; /* 调整滑块的位置使其垂直居中 */
+    border-radius: 7px; /* 设置滑块为圆形 */
+}
+</string>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QSlider" name="horizontalSlider_2">
+    <property name="geometry">
+     <rect>
+      <x>940</x>
+      <y>170</y>
+      <width>261</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QSlider::groove:horizontal {
+    border: 1px solid rgb(200, 200, 200);
+    height: 6px;
+    border-radius: 3px; /* 调整滑槽的圆角以确保圆形滑块完全可见 */
+}
+
+QSlider::sub-page:horizontal {
+    background: rgb(200, 200, 200);
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 3px; /* 调整滑槽的圆角以确保圆形滑块完全可见 */
+}
+
+QSlider::add-page:horizontal {
+    background: rgb(200, 200, 200);
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 3px; /* 调整滑槽的圆角以确保圆形滑块完全可见 */
+}
+
+QSlider::handle:horizontal {
+    background: rgb(69, 173, 237);
+    width: 14px; /* 设置滑块的宽度为14像素 */
+    height: 14px; /* 设置滑块的高度为14像素 */
+    margin-top: -5px; /* 调整滑块的位置使其垂直居中 */
+    margin-bottom: -5px; /* 调整滑块的位置使其垂直居中 */
+    border-radius: 7px; /* 设置滑块为圆形 */
+}
+</string>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QSlider" name="horizontalSlider_3">
+    <property name="geometry">
+     <rect>
+      <x>940</x>
+      <y>220</y>
+      <width>261</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QSlider::groove:horizontal {
+    border: 1px solid rgb(200, 200, 200);
+    height: 6px;
+    border-radius: 3px; /* 调整滑槽的圆角以确保圆形滑块完全可见 */
+}
+
+QSlider::sub-page:horizontal {
+    background: rgb(200, 200, 200);
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 3px; /* 调整滑槽的圆角以确保圆形滑块完全可见 */
+}
+
+QSlider::add-page:horizontal {
+    background: rgb(200, 200, 200);
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 3px; /* 调整滑槽的圆角以确保圆形滑块完全可见 */
+}
+
+QSlider::handle:horizontal {
+    background: rgb(69, 173, 237);
+    width: 14px; /* 设置滑块的宽度为14像素 */
+    height: 14px; /* 设置滑块的高度为14像素 */
+    margin-top: -5px; /* 调整滑块的位置使其垂直居中 */
+    margin-bottom: -5px; /* 调整滑块的位置使其垂直居中 */
+    border-radius: 7px; /* 设置滑块为圆形 */
+}
+</string>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonRed">
+    <property name="geometry">
+     <rect>
+      <x>940</x>
+      <y>350</y>
+      <width>75</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonGreen">
+    <property name="geometry">
+     <rect>
+      <x>1030</x>
+      <y>350</y>
+      <width>75</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonBlue">
+    <property name="geometry">
+     <rect>
+      <x>1120</x>
+      <y>350</y>
+      <width>75</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonRed_2">
+    <property name="geometry">
+     <rect>
+      <x>940</x>
+      <y>390</y>
+      <width>75</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonBlue_2">
+    <property name="geometry">
+     <rect>
+      <x>1120</x>
+      <y>390</y>
+      <width>75</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelNowImage">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>110</y>
+      <width>411</width>
+      <height>591</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(244, 244, 244);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="midLineWidth">
+     <number>-2</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>70</y>
+      <width>881</width>
+      <height>651</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+    background-color: rgb(248, 248, 248);
+    border-radius: 10px; /* 设置圆角半径 */
+    padding: 10px; /* 可选，增加内边距以使圆角效果更显著 */
+}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelCrop">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>320</y>
+      <width>231</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelOriginText">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>90</y>
+      <width>54</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>宋体</family>
+      <pointsize>12</pointsize>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>原始图</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelOriginImage">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>110</y>
+      <width>411</width>
+      <height>591</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(244, 244, 244);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
+    </property>
+    <property name="lineWidth">
+     <number>1</number>
+    </property>
+    <property name="midLineWidth">
+     <number>1</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelNowText">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>90</y>
+      <width>54</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>宋体</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>处理图</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonGreen_2">
+    <property name="geometry">
+     <rect>
+      <x>1030</x>
+      <y>390</y>
+      <width>75</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>930</x>
+      <y>70</y>
+      <width>281</width>
+      <height>211</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+    background-color: rgb(240, 240, 240);
+    border-radius: 10px; /* 设置圆角半径 */
+    padding: 10px; /* 可选，增加内边距以使圆角效果更显著 */
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>930</x>
+      <y>300</y>
+      <width>281</width>
+      <height>211</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+    background-color: rgb(240, 240, 240);
+    border-radius: 10px; /* 设置圆角半径 */
+    padding: 10px; /* 可选，增加内边距以使圆角效果更显著 */
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>940</x>
+      <y>90</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 10pt &quot;宋体&quot;;</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;参数调整&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>940</x>
+      <y>320</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 10pt &quot;宋体&quot;;</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;效果选择&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>930</x>
+      <y>530</y>
+      <width>281</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+    background-color: rgb(240, 240, 240);
+    border-radius: 10px; /* 设置圆角半径 */
+    padding: 10px; /* 可选，增加内边距以使圆角效果更显著 */
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_11">
+    <property name="geometry">
+     <rect>
+      <x>1020</x>
+      <y>530</y>
+      <width>151</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 10pt &quot;宋体&quot;;</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_12">
+    <property name="geometry">
+     <rect>
+      <x>940</x>
+      <y>530</y>
+      <width>71</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 10pt &quot;宋体&quot;;</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;处理进度&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <zorder>label_2</zorder>
+   <zorder>label_3</zorder>
+   <zorder>label_4</zorder>
+   <zorder>label_5</zorder>
+   <zorder>labelShow</zorder>
+   <zorder>label</zorder>
+   <zorder>labelOriginText</zorder>
+   <zorder>labelOriginImage</zorder>
+   <zorder>labelNowImage</zorder>
+   <zorder>labelCrop</zorder>
+   <zorder>labelNowText</zorder>
+   <zorder>label_6</zorder>
+   <zorder>horizontalSlider_3</zorder>
+   <zorder>horizontalSlider_2</zorder>
+   <zorder>horizontalSlider</zorder>
+   <zorder>labelSliderMax_2</zorder>
+   <zorder>labelSliderMax_3</zorder>
+   <zorder>labelSliderMin</zorder>
+   <zorder>labelSliderMax</zorder>
+   <zorder>labelSliderMin_2</zorder>
+   <zorder>labelSliderMin_3</zorder>
+   <zorder>lineEdit_3</zorder>
+   <zorder>lineEdit</zorder>
+   <zorder>lineEdit_2</zorder>
+   <zorder>pushButton_back</zorder>
+   <zorder>pushButtonYes</zorder>
+   <zorder>pushButton_next</zorder>
+   <zorder>label_7</zorder>
+   <zorder>pushButtonGreen_2</zorder>
+   <zorder>pushButtonRed</zorder>
+   <zorder>pushButtonNo</zorder>
+   <zorder>pushButtonGreen</zorder>
+   <zorder>pushButtonBlue_2</zorder>
+   <zorder>pushButtonRed_2</zorder>
+   <zorder>pushButtonBlue</zorder>
+   <zorder>label_8</zorder>
+   <zorder>label_9</zorder>
+   <zorder>label_10</zorder>
+   <zorder>label_11</zorder>
+   <zorder>label_12</zorder>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1238</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="actionOpenFile"/>
+    <addaction name="actionSaveFile"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>空间变换</string>
+    </property>
+    <addaction name="actionxuanzhuang"/>
+    <addaction name="actionsuofang"/>
+    <addaction name="actionjiangxiang"/>
+    <addaction name="actioncaijian"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>灰度变换</string>
+    </property>
+    <addaction name="actionhuidufanzhuan"/>
+    <addaction name="actionduishubianhuan"/>
+    <addaction name="actiongamabianhuan"/>
+    <addaction name="actionzhifangtujunhenghua"/>
+   </widget>
+   <widget class="QMenu" name="menu_4">
+    <property name="title">
+     <string>空间滤波</string>
+    </property>
+    <widget class="QMenu" name="menupinghualvboqi">
+     <property name="title">
+      <string>平滑滤波</string>
+     </property>
+     <widget class="QMenu" name="menuxianxinglvboqi">
+      <property name="title">
+       <string>线性滤波</string>
+      </property>
+      <addaction name="actiongaosilvbaoqi"/>
+      <addaction name="actionjunzhilvbo"/>
+     </widget>
+     <widget class="QMenu" name="menufeixianxinglvboqi">
+      <property name="title">
+       <string>非线性滤波</string>
+      </property>
+      <addaction name="actionzhongzhilvbo"/>
+      <addaction name="actionzuidazhilvbo"/>
+      <addaction name="actionzuixiaozhilvbo"/>
+     </widget>
+     <addaction name="menuxianxinglvboqi"/>
+     <addaction name="menufeixianxinglvboqi"/>
+    </widget>
+    <widget class="QMenu" name="menuruihualvboqi">
+     <property name="title">
+      <string>锐化滤波</string>
+     </property>
+     <addaction name="actionRobertslvbo"/>
+     <addaction name="actionPrewittlvbo"/>
+     <addaction name="actionSoblelvbo"/>
+     <addaction name="actionlapulasi"/>
+    </widget>
+    <addaction name="menupinghualvboqi"/>
+    <addaction name="menuruihualvboqi"/>
+   </widget>
+   <widget class="QMenu" name="menu_5">
+    <property name="title">
+     <string>图像复原</string>
+    </property>
+    <widget class="QMenu" name="menujunzhilvboqi">
+     <property name="title">
+      <string>均值滤波器</string>
+     </property>
+     <addaction name="actionsuanshupingjun"/>
+     <addaction name="actionjihejunzhi"/>
+     <addaction name="actionxiebopingjun"/>
+     <addaction name="actionfanxiebopingjun"/>
+    </widget>
+    <widget class="QMenu" name="menutongjipaixulvboqi">
+     <property name="title">
+      <string>统计排序滤波器</string>
+     </property>
+     <addaction name="actionzhongzhilvbo_2"/>
+     <addaction name="actionzhongdianlvbo"/>
+     <addaction name="actionzuidazhilvbo_2"/>
+     <addaction name="actionzuixiaozhilvbo_2"/>
+     <addaction name="actionxiuzhengaerfajunzhi"/>
+    </widget>
+    <widget class="QMenu" name="menuzishiyinglvboqi">
+     <property name="title">
+      <string>自适应滤波器</string>
+     </property>
+     <addaction name="actionzishiyingzaoshengxiaoqu"/>
+     <addaction name="actionzishiyingzhongzhi"/>
+    </widget>
+    <addaction name="menujunzhilvboqi"/>
+    <addaction name="menutongjipaixulvboqi"/>
+    <addaction name="menuzishiyinglvboqi"/>
+   </widget>
+   <widget class="QMenu" name="menu_6">
+    <property name="title">
+     <string>滤镜</string>
+    </property>
+    <addaction name="actionGlass"/>
+    <addaction name="actionsumiao"/>
+    <addaction name="actionfudiao"/>
+    <addaction name="actiondiaoke"/>
+    <addaction name="actionyouhua"/>
+    <addaction name="actionmasaike"/>
+    <addaction name="actionkatong"/>
+    <addaction name="actionguangzhao"/>
+    <addaction name="actionmohu"/>
+    <addaction name="actionhuaijiu"/>
+    <addaction name="actiondanse"/>
+    <addaction name="actionrongzhu"/>
+    <addaction name="actionbingdong"/>
+    <addaction name="actionlianhuanhua"/>
+    <addaction name="actionyuhua"/>
+    <addaction name="actionhuidu"/>
+    <addaction name="actionheibai_2"/>
+    <addaction name="actionliunian_2"/>
+    <addaction name="actionshuicai"/>
+    <addaction name="actionmiaoxian"/>
+    <addaction name="actiontutoujing"/>
+    <addaction name="actionaotoujing"/>
+    <addaction name="actionnihong"/>
+    <addaction name="actionchongying"/>
+   </widget>
+   <widget class="QMenu" name="menu_7">
+    <property name="title">
+     <string>图像分割</string>
+    </property>
+    <widget class="QMenu" name="menuyuzhifenge">
+     <property name="title">
+      <string>阈值分割</string>
+     </property>
+     <addaction name="actionjiandanzhifangtufenge"/>
+     <addaction name="actiondiedaiyuzhi"/>
+     <addaction name="actionzuijiayuzhifenge"/>
+    </widget>
+    <addaction name="menuyuzhifenge"/>
+    <addaction name="actionquyushengzhang"/>
+    <addaction name="actionKmeansjulei"/>
+    <addaction name="actionMeanshift"/>
+    <addaction name="actionGrabCut"/>
+    <addaction name="actionfenshuiling"/>
+   </widget>
+   <widget class="QMenu" name="menu_8">
+    <property name="title">
+     <string>调整</string>
+    </property>
+    <addaction name="actionvignetting"/>
+    <addaction name="actionliangdu"/>
+    <addaction name="actionduibidu"/>
+    <addaction name="actionsewen"/>
+    <addaction name="actiongaoguang"/>
+    <addaction name="actionbaohedu"/>
+    <addaction name="actionyinying"/>
+    <addaction name="actionruihua"/>
+    <addaction name="actionsexiang"/>
+    <addaction name="actionkeli"/>
+   </widget>
+   <widget class="QMenu" name="menu_9">
+    <property name="title">
+     <string>频域增强</string>
+    </property>
+    <widget class="QMenu" name="menuditonglvbo">
+     <property name="title">
+      <string>低通滤波</string>
+     </property>
+     <addaction name="actionlixiangditong"/>
+     <addaction name="actiongaosiditong"/>
+     <addaction name="actionbutterworthditong"/>
+    </widget>
+    <widget class="QMenu" name="menugaotonglvbo">
+     <property name="title">
+      <string>高通滤波</string>
+     </property>
+     <addaction name="actionlixianggaotong"/>
+     <addaction name="actiongaosigaotong"/>
+     <addaction name="actionbutterworthgaotong"/>
+    </widget>
+    <addaction name="menuditonglvbo"/>
+    <addaction name="menugaotonglvbo"/>
+   </widget>
+   <widget class="QMenu" name="menu_11">
+    <property name="title">
+     <string>添加噪声</string>
+    </property>
+    <addaction name="actiongaosizaosheng"/>
+    <addaction name="actionruilizaosheng"/>
+    <addaction name="actiongamazaosheng"/>
+    <addaction name="actionzhishufenbuzaosheng"/>
+    <addaction name="actionjunyunfenbuzaosheng"/>
+    <addaction name="actionjiaoyanzaosheng"/>
+    <addaction name="actionzhouqizaosheng"/>
+   </widget>
+   <widget class="QMenu" name="menu_12">
+    <property name="title">
+     <string>形态学图像</string>
+    </property>
+    <widget class="QMenu" name="menujibencaozuo">
+     <property name="title">
+      <string>基本操作</string>
+     </property>
+     <addaction name="actionpengzhang"/>
+     <addaction name="actionfushi"/>
+     <addaction name="actionkaicaozuo"/>
+     <addaction name="actionbicaozuo"/>
+     <addaction name="actiongaomao"/>
+     <addaction name="actiondimao"/>
+     <addaction name="actionjizhongjibuzhongbianhuan"/>
+    </widget>
+    <widget class="QMenu" name="menujibensuanfa">
+     <property name="title">
+      <string>基本算法</string>
+     </property>
+     <addaction name="actionbianjietiqu"/>
+     <addaction name="actionquyutianchong"/>
+     <addaction name="actionliantongfenliangtiqu"/>
+     <addaction name="actiontuke"/>
+     <addaction name="actionxihua"/>
+     <addaction name="actioncuhua"/>
+    </widget>
+    <addaction name="menujibencaozuo"/>
+    <addaction name="menujibensuanfa"/>
+   </widget>
+   <widget class="QMenu" name="menu_10">
+    <property name="title">
+     <string>其他</string>
+    </property>
+    <addaction name="actionzhifangtu"/>
+    <addaction name="actionpinputu"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_6"/>
+   <addaction name="menu_8"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_3"/>
+   <addaction name="menu_4"/>
+   <addaction name="menu_9"/>
+   <addaction name="menu_11"/>
+   <addaction name="menu_5"/>
+   <addaction name="menu_12"/>
+   <addaction name="menu_7"/>
+   <addaction name="menu_10"/>
+  </widget>
+  <action name="actionOpenFile">
+   <property name="text">
+    <string>打开文件</string>
+   </property>
+  </action>
+  <action name="actionSaveFile">
+   <property name="text">
+    <string>保存文件</string>
+   </property>
+  </action>
+  <action name="actionmove">
+   <property name="text">
+    <string>平移</string>
+   </property>
+  </action>
+  <action name="actionxuanzhuang">
+   <property name="text">
+    <string>旋转</string>
+   </property>
+  </action>
+  <action name="actionsuofang">
+   <property name="text">
+    <string>缩放</string>
+   </property>
+  </action>
+  <action name="actionjiangxiang">
+   <property name="text">
+    <string>镜像</string>
+   </property>
+  </action>
+  <action name="actioncaijian">
+   <property name="text">
+    <string>裁剪</string>
+   </property>
+  </action>
+  <action name="actionGlass">
+   <property name="text">
+    <string>毛玻璃</string>
+   </property>
+  </action>
+  <action name="actionsumiao">
+   <property name="text">
+    <string>素描</string>
+   </property>
+  </action>
+  <action name="actionfudiao">
+   <property name="text">
+    <string>浮雕</string>
+   </property>
+  </action>
+  <action name="actionheibai">
+   <property name="text">
+    <string>黑白</string>
+   </property>
+  </action>
+  <action name="actionhuidufanzhuan">
+   <property name="text">
+    <string>灰度反转</string>
+   </property>
+  </action>
+  <action name="actionduishubianhuan">
+   <property name="text">
+    <string>对数变化</string>
+   </property>
+  </action>
+  <action name="actiongamabianhuan">
+   <property name="text">
+    <string>伽马变换</string>
+   </property>
+  </action>
+  <action name="actionzhifangtujunhenghua">
+   <property name="text">
+    <string>直方图均衡化</string>
+   </property>
+  </action>
+  <action name="actionjunzhilvbo">
+   <property name="text">
+    <string>均值滤波</string>
+   </property>
+  </action>
+  <action name="actiongaosilvbaoqi">
+   <property name="text">
+    <string>高斯滤波</string>
+   </property>
+  </action>
+  <action name="actionzhongzhilvbo">
+   <property name="text">
+    <string>中值滤波</string>
+   </property>
+  </action>
+  <action name="actionlapulasi">
+   <property name="text">
+    <string>Laplacian滤波</string>
+   </property>
+  </action>
+  <action name="actionyouhua">
+   <property name="text">
+    <string>油画</string>
+   </property>
+  </action>
+  <action name="actionmasaike">
+   <property name="text">
+    <string>马赛克</string>
+   </property>
+  </action>
+  <action name="actionhuaijiu">
+   <property name="text">
+    <string>怀旧</string>
+   </property>
+  </action>
+  <action name="actionliunian">
+   <property name="text">
+    <string>流年</string>
+   </property>
+  </action>
+  <action name="actionkatong">
+   <property name="text">
+    <string>卡通</string>
+   </property>
+  </action>
+  <action name="actionguangzhao">
+   <property name="text">
+    <string>光照</string>
+   </property>
+  </action>
+  <action name="actionmohu">
+   <property name="text">
+    <string>模糊</string>
+   </property>
+  </action>
+  <action name="actiondiaoke">
+   <property name="text">
+    <string>雕刻</string>
+   </property>
+  </action>
+  <action name="actionyunying">
+   <property name="text">
+    <string>晕影</string>
+   </property>
+  </action>
+  <action name="actiondanse">
+   <property name="text">
+    <string>单色</string>
+   </property>
+  </action>
+  <action name="actionfanxiang">
+   <property name="text">
+    <string>反向</string>
+   </property>
+  </action>
+  <action name="actionrongzhu">
+   <property name="text">
+    <string>熔铸</string>
+   </property>
+  </action>
+  <action name="actionbingdong">
+   <property name="text">
+    <string>冰冻</string>
+   </property>
+  </action>
+  <action name="actionlianhuanhua">
+   <property name="text">
+    <string>连环画</string>
+   </property>
+  </action>
+  <action name="actionyuhua">
+   <property name="text">
+    <string>羽化</string>
+   </property>
+  </action>
+  <action name="actionvignetting">
+   <property name="text">
+    <string>晕影</string>
+   </property>
+  </action>
+  <action name="actionbaoguang">
+   <property name="text">
+    <string>曝光</string>
+   </property>
+  </action>
+  <action name="actionliangdu">
+   <property name="text">
+    <string>亮度</string>
+   </property>
+  </action>
+  <action name="actionduibidu">
+   <property name="text">
+    <string>对比度</string>
+   </property>
+  </action>
+  <action name="actionbaohedu">
+   <property name="text">
+    <string>饱和度</string>
+   </property>
+  </action>
+  <action name="actionsewen">
+   <property name="text">
+    <string>色温</string>
+   </property>
+  </action>
+  <action name="actionsediao">
+   <property name="text">
+    <string>sediao</string>
+   </property>
+  </action>
+  <action name="actiongaoguang">
+   <property name="text">
+    <string>高光</string>
+   </property>
+  </action>
+  <action name="actionyinying">
+   <property name="text">
+    <string>阴影</string>
+   </property>
+  </action>
+  <action name="actionkeli">
+   <property name="text">
+    <string>颗粒感</string>
+   </property>
+  </action>
+  <action name="actionruihua">
+   <property name="text">
+    <string>锐化</string>
+   </property>
+  </action>
+  <action name="actionsexiang">
+   <property name="text">
+    <string>色相</string>
+   </property>
+  </action>
+  <action name="actionhuidu">
+   <property name="text">
+    <string>灰度</string>
+   </property>
+  </action>
+  <action name="actionheibai_2">
+   <property name="text">
+    <string>黑白</string>
+   </property>
+  </action>
+  <action name="actiondanse_2">
+   <property name="text">
+    <string>单色</string>
+   </property>
+  </action>
+  <action name="actionliunian_2">
+   <property name="text">
+    <string>流年</string>
+   </property>
+  </action>
+  <action name="actionshuicai">
+   <property name="text">
+    <string>水彩</string>
+   </property>
+  </action>
+  <action name="actionmiaoxian">
+   <property name="text">
+    <string>描线</string>
+   </property>
+  </action>
+  <action name="actiontutoujing">
+   <property name="text">
+    <string>凸透镜</string>
+   </property>
+  </action>
+  <action name="actionaotoujing">
+   <property name="text">
+    <string>凹透镜</string>
+   </property>
+  </action>
+  <action name="actionnihong">
+   <property name="text">
+    <string>霓虹</string>
+   </property>
+  </action>
+  <action name="actionchongying">
+   <property name="text">
+    <string>重影</string>
+   </property>
+  </action>
+  <action name="actionSoblelvbo">
+   <property name="text">
+    <string>Soble滤波</string>
+   </property>
+  </action>
+  <action name="actionPrewittlvbo">
+   <property name="text">
+    <string>Prewitt滤波</string>
+   </property>
+  </action>
+  <action name="actionRobertslvbo">
+   <property name="text">
+    <string>Roberts滤波</string>
+   </property>
+  </action>
+  <action name="actionzuidazhilvbo">
+   <property name="text">
+    <string>最大值滤波</string>
+   </property>
+  </action>
+  <action name="actionzuixiaozhilvbo">
+   <property name="text">
+    <string>最小值滤波</string>
+   </property>
+  </action>
+  <action name="actionlixiangditong">
+   <property name="text">
+    <string>理想低通滤波</string>
+   </property>
+  </action>
+  <action name="actiongaosiditong">
+   <property name="text">
+    <string>高斯低通滤波</string>
+   </property>
+  </action>
+  <action name="actionbutterworthditong">
+   <property name="text">
+    <string>butterworth低通滤波</string>
+   </property>
+  </action>
+  <action name="actionlixianggaotong">
+   <property name="text">
+    <string>理想高通滤波</string>
+   </property>
+  </action>
+  <action name="actiongaosigaotong">
+   <property name="text">
+    <string>高斯高通滤波</string>
+   </property>
+  </action>
+  <action name="actionbutterworthgaotong">
+   <property name="text">
+    <string>butterworth高通滤波</string>
+   </property>
+  </action>
+  <action name="actiongaosizaosheng">
+   <property name="text">
+    <string>高斯噪声</string>
+   </property>
+  </action>
+  <action name="actionruilizaosheng">
+   <property name="text">
+    <string>瑞利噪声</string>
+   </property>
+  </action>
+  <action name="actiongamazaosheng">
+   <property name="text">
+    <string>伽马噪声</string>
+   </property>
+  </action>
+  <action name="actionzhishufenbuzaosheng">
+   <property name="text">
+    <string>指数分布噪声</string>
+   </property>
+  </action>
+  <action name="actionjunyunfenbuzaosheng">
+   <property name="text">
+    <string>均匀分布噪声</string>
+   </property>
+  </action>
+  <action name="actionjiaoyanzaosheng">
+   <property name="text">
+    <string>椒盐噪声</string>
+   </property>
+  </action>
+  <action name="actionzhouqizaosheng">
+   <property name="text">
+    <string>周期噪声</string>
+   </property>
+  </action>
+  <action name="actiontedingxuanzhuang">
+   <property name="text">
+    <string>tedingxuanzhuang</string>
+   </property>
+  </action>
+  <action name="actionsuanshupingjun">
+   <property name="text">
+    <string>算数均值滤波器</string>
+   </property>
+  </action>
+  <action name="actionjihejunzhi">
+   <property name="text">
+    <string>几何均值滤波器</string>
+   </property>
+  </action>
+  <action name="actionxiebopingjun">
+   <property name="text">
+    <string>谐波均值滤波器</string>
+   </property>
+  </action>
+  <action name="actionfanxiebopingjun">
+   <property name="text">
+    <string>反谐波均值滤波器</string>
+   </property>
+   <property name="iconText">
+    <string>反谐波均值滤波器</string>
+   </property>
+  </action>
+  <action name="actionzhongzhilvbo_2">
+   <property name="text">
+    <string>中值滤波器</string>
+   </property>
+  </action>
+  <action name="actionzhongdianlvbo">
+   <property name="text">
+    <string>中点滤波器</string>
+   </property>
+  </action>
+  <action name="actionzuidazhilvbo_2">
+   <property name="text">
+    <string>最大值滤波器</string>
+   </property>
+  </action>
+  <action name="actionzuixiaozhilvbo_2">
+   <property name="text">
+    <string>最小值滤波器</string>
+   </property>
+  </action>
+  <action name="actionxiuzhengaerfajunzhi">
+   <property name="text">
+    <string>修正阿尔法均值滤波器</string>
+   </property>
+  </action>
+  <action name="actionzishiyingzaoshengxiaoqu">
+   <property name="text">
+    <string>自适应局部降噪滤波器</string>
+   </property>
+  </action>
+  <action name="actionzishiyingzhongzhi">
+   <property name="text">
+    <string>自适应中值滤波器</string>
+   </property>
+  </action>
+  <action name="actionpengzhang">
+   <property name="text">
+    <string>膨胀</string>
+   </property>
+  </action>
+  <action name="actionfushi">
+   <property name="text">
+    <string>腐蚀</string>
+   </property>
+  </action>
+  <action name="actionkaicaozuo">
+   <property name="text">
+    <string>开操作</string>
+   </property>
+  </action>
+  <action name="actionbicaozuo">
+   <property name="text">
+    <string>闭操作</string>
+   </property>
+  </action>
+  <action name="actiongaomao">
+   <property name="text">
+    <string>高帽</string>
+   </property>
+  </action>
+  <action name="actiondimao">
+   <property name="text">
+    <string>低帽</string>
+   </property>
+  </action>
+  <action name="actionbianjietiqu">
+   <property name="text">
+    <string>边界提取</string>
+   </property>
+  </action>
+  <action name="actionquyutianchong">
+   <property name="text">
+    <string>区域填充</string>
+   </property>
+  </action>
+  <action name="actionliantongfenliangtiqu">
+   <property name="text">
+    <string>连通分量提取</string>
+   </property>
+  </action>
+  <action name="actiontuke">
+   <property name="text">
+    <string>凸壳</string>
+   </property>
+  </action>
+  <action name="actionxihua">
+   <property name="text">
+    <string>细化</string>
+   </property>
+  </action>
+  <action name="actioncuhua">
+   <property name="text">
+    <string>粗化</string>
+   </property>
+  </action>
+  <action name="actionjizhongjibuzhongbianhuan">
+   <property name="text">
+    <string>击中/击不中变换</string>
+   </property>
+  </action>
+  <action name="actionquyushengzhang">
+   <property name="text">
+    <string>区域生长</string>
+   </property>
+  </action>
+  <action name="actionKmeansjulei">
+   <property name="text">
+    <string>Kmeans聚类</string>
+   </property>
+  </action>
+  <action name="actionMeanshift">
+   <property name="text">
+    <string>Meanshift</string>
+   </property>
+  </action>
+  <action name="actionGraphCut">
+   <property name="text">
+    <string>GraphCut</string>
+   </property>
+  </action>
+  <action name="actionGrabCut">
+   <property name="text">
+    <string>GrabCut</string>
+   </property>
+  </action>
+  <action name="actionfenshuiling">
+   <property name="text">
+    <string>分水岭</string>
+   </property>
+  </action>
+  <action name="actionhuizhi">
+   <property name="text">
+    <string>绘制</string>
+   </property>
+  </action>
+  <action name="actionwenben">
+   <property name="text">
+    <string>文本</string>
+   </property>
+  </action>
+  <action name="actionjiandanzhifangtufenge">
+   <property name="text">
+    <string>简单直方图分割</string>
+   </property>
+  </action>
+  <action name="actiondiedaiyuzhi">
+   <property name="text">
+    <string>迭代阈值</string>
+   </property>
+   <property name="iconText">
+    <string>迭代阈值分割</string>
+   </property>
+  </action>
+  <action name="actionzuijiayuzhifenge">
+   <property name="text">
+    <string>最佳阈值分割</string>
+   </property>
+  </action>
+  <action name="actionzhifangtu">
+   <property name="text">
+    <string>直方图</string>
+   </property>
+  </action>
+  <action name="actionpinputu">
+   <property name="text">
+    <string>频谱图</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="ImageProcess.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>actionOpenFile</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>menu_file_open_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>432</x>
+     <y>290</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionSaveFile</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>menu_file_save_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>425</x>
+     <y>355</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionGlass</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>menu_filter_glass_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>473</x>
+     <y>366</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSlider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>slider_change()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>360</x>
+     <y>663</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>444</x>
+     <y>366</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButtonYes</sender>
+   <signal>clicked()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>button_yes_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>637</x>
+     <y>665</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>444</x>
+     <y>366</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButtonNo</sender>
+   <signal>clicked()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>button_no_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>767</x>
+     <y>665</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>444</x>
+     <y>366</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSlider_2</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>slider2_change()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>360</x>
+     <y>673</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>444</x>
+     <y>366</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionsumiao</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>menu_filter_sketch_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>444</x>
+     <y>366</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionfudiao</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>menu_filter_relief_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>444</x>
+     <y>366</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actiondiaoke</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>menu_filter_sculpture_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>444</x>
+     <y>366</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionyouhua</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>menu_filter_oil_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>444</x>
+     <y>366</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionmasaike</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>menu_filter_mask_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>444</x>
+     <y>366</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionhuaijiu</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>menu_filter_old_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>444</x>
+     <y>366</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionkatong</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>menu_filter_cartoon_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>444</x>
+     <y>366</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionguangzhao</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>menu_filter_illumination_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>444</x>
+     <y>366</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionmohu</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>menu_filter_dim_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>444</x>
+     <y>366</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionliunian_2</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>menu_filter_fleet_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>444</x>
+     <y>366</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionvignetting</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>menu_enhance_vignetting_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>444</x>
+     <y>366</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionrongzhu</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>menu_filter_casting_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>444</x>
+     <y>366</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionbingdong</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>menu_filter_frozen_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>444</x>
+     <y>366</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionlianhuanhua</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>menu_filter_comic_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>444</x>
+     <y>366</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionyuhua</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>menu_filter_fleet_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>444</x>
+     <y>366</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionsewen</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>menu_enhance_colorTemperature_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>444</x>
+     <y>366</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionbaohedu</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>menu_enhance_saturability_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>444</x>
+     <y>366</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionliangdu</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>menu_enhance_luminance_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>444</x>
+     <y>366</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionduibidu</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>menu_enhance_contrast_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>444</x>
+     <y>366</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionsexiang</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>menu_enhance_hue_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>444</x>
+     <y>366</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionkeli</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>menu_enhance_granular_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>444</x>
+     <y>366</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionruihua</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>menu_enhance_sharpen_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>444</x>
+     <y>366</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actiongaoguang</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>menu_enhance_highlight_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>444</x>
+     <y>366</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionyinying</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>menu_enhance_shadow_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>444</x>
+     <y>366</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionhuidufanzhuan</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>menu_greyTransform_reversal_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>444</x>
+     <y>366</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionhuidu</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>menu_filter_grey_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>444</x>
+     <y>366</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionheibai_2</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>menu_filter_whiteAndBlack_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>444</x>
+     <y>366</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actiondanse</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>menu_filter_homochromy_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>444</x>
+     <y>366</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButtonRed</sender>
+   <signal>clicked()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>button_red_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>227</x>
+     <y>625</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>444</x>
+     <y>366</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButtonBlue</sender>
+   <signal>clicked()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>button_blue_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>487</x>
+     <y>625</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>444</x>
+     <y>366</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButtonGreen</sender>
+   <signal>clicked()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>button_green_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>367</x>
+     <y>625</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>444</x>
+     <y>366</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionshuicai</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>menu_filter_watercolor_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>444</x>
+     <y>366</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionmiaoxian</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>menu_filter_linedraw_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>444</x>
+     <y>366</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionaotoujing</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>menu_filter_concave_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>444</x>
+     <y>366</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actiontutoujing</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>menu_filter_convex_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>444</x>
+     <y>366</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionchongying</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>menu_filter_ghost_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>444</x>
+     <y>366</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionnihong</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>menu_filter_neon_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>444</x>
+     <y>366</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit</sender>
+   <signal>editingFinished()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>LineEdit_first_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>360</x>
+     <y>639</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>444</x>
+     <y>366</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_2</sender>
+   <signal>editingFinished()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>LineEdit_second_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>360</x>
+     <y>693</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>444</x>
+     <y>366</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionduishubianhuan</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>menu_greyTransform_log_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>444</x>
+     <y>366</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actiongamabianhuan</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>menu_greyTransform_gamma_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>444</x>
+     <y>366</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionzhifangtujunhenghua</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>menu_greyTransform_histogramEqualization_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>444</x>
+     <y>366</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionjunzhilvbo</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>menu_spatialFilter_averageFilter_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>444</x>
+     <y>366</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actiongaosilvbaoqi</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>menu_spatialFilter_gaussianFilter_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>444</x>
+     <y>366</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionzhongzhilvbo</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>menu_spatialFilter_medianFilter_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>444</x>
+     <y>366</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionzuidazhilvbo</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>menu_spatialFilter_maxFilter_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>447</x>
+     <y>361</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionzuixiaozhilvbo</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>menu_spatialFilter_minFilter_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>447</x>
+     <y>361</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionSoblelvbo</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>menu_spatialFilter_SobelFilter_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>447</x>
+     <y>361</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionRobertslvbo</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>menu_spatialFilter_RobertsFilter_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>447</x>
+     <y>361</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionPrewittlvbo</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>menu_spatialFilter_PrewittFilter_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>447</x>
+     <y>361</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionlapulasi</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>menu_spatialFilter_LaplacianFilter_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>447</x>
+     <y>361</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButtonRed_2</sender>
+   <signal>clicked()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>button_red2_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>227</x>
+     <y>675</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>447</x>
+     <y>361</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButtonBlue_2</sender>
+   <signal>clicked()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>button_blue2_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>487</x>
+     <y>675</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>447</x>
+     <y>361</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionbutterworthditong</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>menu_frequency_ButterworthLowPass_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>447</x>
+     <y>361</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionbutterworthgaotong</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>menu_frequency_ButterworthHighPass_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>447</x>
+     <y>361</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actiongaosiditong</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>menu_frequency_GaussLowPass_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>447</x>
+     <y>361</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actiongaosigaotong</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>menu_frequency_GaussHighPass_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>447</x>
+     <y>361</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionlixiangditong</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>menu_frequency_idealLowPass_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>447</x>
+     <y>361</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionlixianggaotong</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>menu_frequency_idealHighPass_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>447</x>
+     <y>361</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_back</sender>
+   <signal>clicked()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>button_back_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>367</x>
+     <y>645</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>444</x>
+     <y>361</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_next</sender>
+   <signal>clicked()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>button_next_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>517</x>
+     <y>645</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>444</x>
+     <y>361</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionxuanzhuang</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>menu_spatialtransformation_rotation_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>444</x>
+     <y>361</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionsuofang</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>menu_spatialtransformation_zoom_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>444</x>
+     <y>361</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionjiangxiang</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>menu_spatialtransformation_mirror_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>444</x>
+     <y>361</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actiongaosizaosheng</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>menu_addNoise_GaussNoise_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>444</x>
+     <y>361</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actiongamazaosheng</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>menu_addNoise_GammaNoise_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>444</x>
+     <y>361</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionjiaoyanzaosheng</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>menu_addNoise_SaltandPepperNoise_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>444</x>
+     <y>361</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionjunyunfenbuzaosheng</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>menu_addNoise_UniformNoise_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>444</x>
+     <y>361</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionruilizaosheng</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>menu_addNoise_RayleighNoise_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>444</x>
+     <y>361</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionzhishufenbuzaosheng</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>menu_addNoise_ExponentialNoise_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>444</x>
+     <y>361</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionzhouqizaosheng</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>menu_addNoise_PeriodicNoise_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>444</x>
+     <y>361</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>horizontalSlider_3</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>slider3_change()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>360</x>
+     <y>723</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>444</x>
+     <y>387</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_3</sender>
+   <signal>editingFinished()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>LineEdit_third_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>360</x>
+     <y>743</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>444</x>
+     <y>387</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionsuanshupingjun</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>menu_recovery_arithmeticMean_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>444</x>
+     <y>387</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionjihejunzhi</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>menu_recovery_geometricMean_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>444</x>
+     <y>387</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionxiebopingjun</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>menu_recovery_harmonicMean_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>444</x>
+     <y>387</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionfanxiebopingjun</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>menu_recovery_antiharmonicMean_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>444</x>
+     <y>387</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionzhongzhilvbo_2</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>menu_spatialFilter_medianFilter_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>444</x>
+     <y>387</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionzuidazhilvbo_2</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>menu_spatialFilter_maxFilter_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>444</x>
+     <y>387</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionzuixiaozhilvbo_2</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>menu_spatialFilter_minFilter_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>444</x>
+     <y>387</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionzhongdianlvbo</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>menu_recovery_midpoint_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>444</x>
+     <y>387</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionxiuzhengaerfajunzhi</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>menu_recovery_alphaTrimmedMean_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>444</x>
+     <y>387</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionzishiyingzaoshengxiaoqu</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>menu_recovery_adaptiveNoiseCancel_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>444</x>
+     <y>387</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionzishiyingzhongzhi</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>menu_recovery_adaptiveMedian_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>444</x>
+     <y>387</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionpengzhang</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>menu_morphological_expansion_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>444</x>
+     <y>387</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionfushi</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>menu_morphological_erosion_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>444</x>
+     <y>387</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionkaicaozuo</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>menu_morphological_openOperation_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>444</x>
+     <y>387</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionbicaozuo</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>menu_morphological_closeOperation_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>444</x>
+     <y>387</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actiongaomao</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>menu_morphological_topHat_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>444</x>
+     <y>387</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actiondimao</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>menu_morphological_lowHat_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>444</x>
+     <y>387</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionjizhongjibuzhongbianhuan</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>menu_morphological_hitMiss_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>444</x>
+     <y>387</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionbianjietiqu</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>menu_morphological_boundaryExtraction_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>444</x>
+     <y>387</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionquyutianchong</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>menu_morphological_areaFill_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>444</x>
+     <y>387</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionliantongfenliangtiqu</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>menu_morphological_connectedComponentExtraction_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>444</x>
+     <y>387</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actiontuke</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>menu_morphological_convexShell_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>444</x>
+     <y>387</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actioncuhua</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>menu_morphological_coarsening_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>444</x>
+     <y>387</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionxihua</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>menu_morphological_refinement_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>444</x>
+     <y>387</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actioncaijian</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>menu_spatialtransformation_cropping_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>440</x>
+     <y>387</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionhuizhi</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>menu_add_paint_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>445</x>
+     <y>387</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionjiandanzhifangtufenge</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>menu_imageSegmentation_histogramSegmentation_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>445</x>
+     <y>387</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actiondiedaiyuzhi</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>menu_imageSegmentation_iterativeThresholdSegmentation_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>445</x>
+     <y>387</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionzuijiayuzhifenge</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>menu_imageSegmentation_otsu_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>445</x>
+     <y>387</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionquyushengzhang</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>menu_imageSegmentation_regionalGrowth_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>445</x>
+     <y>387</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionKmeansjulei</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>menu_imageSegmentation_Kmeans_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>445</x>
+     <y>387</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionMeanshift</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>menu_imageSegmentation_meanShift_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>445</x>
+     <y>387</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionfenshuiling</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>menu_imageSegmentation_watershed_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>445</x>
+     <y>387</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionGrabCut</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>menu_imageSegmentation_grabCut_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>445</x>
+     <y>387</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionzhifangtu</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>menu_other_showHistogram_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>445</x>
+     <y>387</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionpinputu</sender>
+   <signal>triggered()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>menu_other_showSpectrogram_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>445</x>
+     <y>387</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButtonGreen_2</sender>
+   <signal>clicked()</signal>
+   <receiver>ImageProcessClass</receiver>
+   <slot>button_green2_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1067</x>
+     <y>165</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>618</x>
+     <y>394</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <signal>clicked()</signal>
+  <slot>menu_file_open_clicked()</slot>
+  <slot>menu_file_save_clicked()</slot>
+  <slot>menu_filter_glass_clicked()</slot>
+  <slot>slider_change()</slot>
+  <slot>button_yes_clicked()</slot>
+  <slot>button_no_clicked()</slot>
+  <slot>slider2_change()</slot>
+  <slot>menu_filter_sketch_clicked()</slot>
+  <slot>menu_filter_relief_clicked()</slot>
+  <slot>menu_filter_sculpture_clicked()</slot>
+  <slot>menu_filter_oil_clicked()</slot>
+  <slot>menu_filter_mask_clicked()</slot>
+  <slot>menu_filter_old_clicked()</slot>
+  <slot>menu_filter_fleet_clicked()</slot>
+  <slot>menu_filter_cartoon_clicked()</slot>
+  <slot>menu_filter_illumination_clicked()</slot>
+  <slot>menu_filter_dim_clicked()</slot>
+  <slot>menu_enhance_vignetting_clicked()</slot>
+  <slot>menu_filter_casting_clicked()</slot>
+  <slot>menu_filter_frozen_clicked()</slot>
+  <slot>menu_filter_comic_clicked()</slot>
+  <slot>menu_filter_feather_clicked()</slot>
+  <slot>menu_enhance_colorTemperature_clicked()</slot>
+  <slot>menu_enhance_saturability_clicked()</slot>
+  <slot>menu_enhance_luminance_clicked()</slot>
+  <slot>menu_enhance_contrast_clicked()</slot>
+  <slot>menu_enhance_hue_clicked()</slot>
+  <slot>menu_enhance_highlight_clicked()</slot>
+  <slot>menu_enhance_granular_clicked()</slot>
+  <slot>menu_enhance_sharpen_clicked()</slot>
+  <slot>menu_enhance_shadow_clicked()</slot>
+  <slot>menu_greyTransform_reversal_clicked()</slot>
+  <slot>menu_filter_grey_clicked()</slot>
+  <slot>menu_filter_whiteAndBlack_clicked()</slot>
+  <slot>menu_filter_homochromy_clicked()</slot>
+  <slot>button_red_clicked()</slot>
+  <slot>button_green_clicked()</slot>
+  <slot>button_blue_clicked()</slot>
+  <slot>menu_filter_watercolor_clicked()</slot>
+  <slot>menu_filter_linedraw_clicked()</slot>
+  <slot>menu_filter_convex_clicked()</slot>
+  <slot>menu_filter_concave_clicked()</slot>
+  <slot>menu_filter_neon_clicked()</slot>
+  <slot>menu_filter_ghost_clicked()</slot>
+  <slot>LineEdit_first_clicked()</slot>
+  <slot>LineEdit_second_clicked()</slot>
+  <slot>menu_greyTransform_log_clicked()</slot>
+  <slot>menu_greyTransform_gamma_clicked()</slot>
+  <slot>menu_greyTransform_histogramEqualization_clicked()</slot>
+  <slot>menu_spatialFilter_averageFilter_clicked()</slot>
+  <slot>menu_spatialFilter_gaussianFilter_clicked()</slot>
+  <slot>menu_spatialFilter_medianFilter_clicked()</slot>
+  <slot>menu_spatialFilter_maxFilter_clicked()</slot>
+  <slot>menu_spatialFilter_minFilter_clicked()</slot>
+  <slot>menu_spatialFilter_RobertsFilter_clicked()</slot>
+  <slot>menu_spatialFilter_SobelFilter_clicked()</slot>
+  <slot>menu_spatialFilter_LaplacianFilter_clicked()</slot>
+  <slot>menu_spatialFilter_PrewittFilter_clicked()</slot>
+  <slot>button_red2_clicked()</slot>
+  <slot>button_blue2_clicked()</slot>
+  <slot>menu_frequency_idealHighPass_clicked()</slot>
+  <slot>menu_frequency_GaussHighPass_clicked()</slot>
+  <slot>menu_frequency_ButterworthHighPass_clicked()</slot>
+  <slot>menu_frequency_idealLowPass_clicked()</slot>
+  <slot>menu_frequency_GaussLowPass_clicked()</slot>
+  <slot>menu_frequency_ButterworthLowPass_clicked()</slot>
+  <slot>button_back_clicked()</slot>
+  <slot>button_next_clicked()</slot>
+  <slot>menu_spatialtransformation_rotation_clicked()</slot>
+  <slot>menu_spatialtransformation_zoom_clicked()</slot>
+  <slot>menu_spatialtransformation_mirror_clicked()</slot>
+  <slot>menu_addNoise_GaussNoise_clicked()</slot>
+  <slot>menu_addNoise_RayleighNoise_clicked()</slot>
+  <slot>menu_addNoise_GammaNoise_clicked()</slot>
+  <slot>menu_addNoise_ExponentialNoise_clicked()</slot>
+  <slot>menu_addNoise_UniformNoise_clicked()</slot>
+  <slot>menu_addNoise_SaltandPepperNoise_clicked()</slot>
+  <slot>menu_addNoise_PeriodicNoise_clicked()</slot>
+  <slot>slider3_change()</slot>
+  <slot>LineEdit_third_clicked()</slot>
+  <slot>menu_recovery_arithmeticMean_clicked()</slot>
+  <slot>menu_recovery_geometricMean_clicked()</slot>
+  <slot>menu_recovery_harmonicMean_clicked()</slot>
+  <slot>menu_recovery_antiharmonicMean_clicked()</slot>
+  <slot>menu_recovery_midpoint_clicked()</slot>
+  <slot>menu_recovery_alphaTrimmedMean_clicked()</slot>
+  <slot>menu_recovery_adaptiveNoiseCancel_clicked()</slot>
+  <slot>menu_recovery_adaptiveMedian_clicked()</slot>
+  <slot>menu_morphological_expansion_clicked()</slot>
+  <slot>menu_morphological_erosion_clicked()</slot>
+  <slot>menu_morphological_openOperation_clicked()</slot>
+  <slot>menu_morphological_closeOperation_clicked()</slot>
+  <slot>menu_morphological_topHat_clicked()</slot>
+  <slot>menu_morphological_lowHat_clicked()</slot>
+  <slot>menu_morphological_hitMiss_clicked()</slot>
+  <slot>menu_morphological_boundaryExtraction_clicked()</slot>
+  <slot>menu_morphological_areaFill_clicked()</slot>
+  <slot>menu_morphological_connectedComponentExtraction_clicked()</slot>
+  <slot>menu_morphological_convexShell_clicked()</slot>
+  <slot>menu_morphological_refinement_clicked()</slot>
+  <slot>menu_morphological_coarsening_clicked()</slot>
+  <slot>menu_spatialtransformation_cropping_clicked()</slot>
+  <slot>menu_add_paint_clicked()</slot>
+  <slot>menu_imageSegmentation_histogramSegmentation_clicked()</slot>
+  <slot>menu_imageSegmentation_iterativeThresholdSegmentation_clicked()</slot>
+  <slot>menu_imageSegmentation_otsu_clicked()</slot>
+  <slot>menu_imageSegmentation_regionalGrowth_clicked()</slot>
+  <slot>menu_imageSegmentation_Kmeans_clicked()</slot>
+  <slot>menu_imageSegmentation_meanShift_clicked()</slot>
+  <slot>menu_imageSegmentation_watershed_clicked()</slot>
+  <slot>menu_imageSegmentation_grabCut_clicked()</slot>
+  <slot>menu_other_showSpectrogram_clicked()</slot>
+  <slot>menu_other_showHistogram_clicked()</slot>
+  <slot>button_green2_clicked()</slot>
+ </slots>
+</ui>
