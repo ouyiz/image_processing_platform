@@ -4,8 +4,7 @@ Opencv+QT数字图像处理平台C++
 Visual studio版本：2022
 QT版本：6.6.2
 Opencv版本：4.0.0
-<img width="846" height="559" alt="image" src="https://github.com/user-attachments/assets/1c684fa3-26d9-47b0-8f89-8550803f93dd" />
-<img width="865" height="572" alt="image" src="https://github.com/user-attachments/assets/23718399-8edd-4b73-bccf-42cf6b92636f" />
+
 
 功能如下：
 1.	图像处理平台主要分12部分，分别为文件、滤镜、调整、空间变换、灰度变换、空间滤波、频率增强、添加噪声、图像复原、形态学图像、图像分割、其他。
